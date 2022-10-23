@@ -1,0 +1,26 @@
+html {
+    background-color: #272728;
+}
+
+.TitleText {
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.TitleSubText {
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-top: 70px; 
+}

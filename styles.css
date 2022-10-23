@@ -28,7 +28,7 @@ html {
 .criteria {
     font-family: lato, sans-serif;
     margin-top: 200px;
-    margin-left: 34%; /* why tf does this center it :sob:*/
+    margin-left: 34%; 
     height: 20%;
     width: 32%;
     font-weight: 700;
@@ -43,7 +43,7 @@ html {
 .contact {
     font-family: lato, sans-serif;
     margin-top: 400px;
-    margin-left: 34%; /* why tf does this center it :sob:*/
+    margin-left: 34%; 
     height: 20%;
     width: 32%;
     font-weight: 700;

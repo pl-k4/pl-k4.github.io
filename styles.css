@@ -24,3 +24,33 @@ html {
     right: 0;
     margin-top: 70px; 
 }
+
+.criteria {
+    font-family: lato, sans-serif;
+    margin-top: 200px;
+    margin-left: 34%; /* why tf does this center it :sob:*/
+    height: 20%;
+    width: 32%;
+    font-weight: 700;
+    font-style: normal;
+    font-size: large;
+    border-radius: 15px;
+    background-color: palegoldenrod;
+    position: absolute;
+    text-align: center;
+}
+
+.contact {
+    font-family: lato, sans-serif;
+    margin-top: 400px;
+    margin-left: 34%; /* why tf does this center it :sob:*/
+    height: 20%;
+    width: 32%;
+    font-weight: 700;
+    font-style: normal;
+    font-size: large;
+    border-radius: 15px;
+    background-color: palegoldenrod;
+    position: absolute;
+    text-align: center;
+}

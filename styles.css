@@ -1,16 +1,218 @@
 html {
-    background-color: #272728;
+  background-color: #272726;
+}
+body{
+  text-align: center;
+  margin-left: 130px;
+  color: White;
+}
+.MainText {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
+.BodyText {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
+img {
+  height: 128px;
+  width: 128px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  padding: 0px 10px;
+}
+.HomeNav {
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: #f5c800;
+  overflow-x: hidden;
+  padding-top: 35px;
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  /* border-radius: 0px 0px 17px 17px; */
+}
+.HomeNav a {
+  padding: 35px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #000000;
+}
+.HomeNav a:hover {
+  color: #696969;
+}
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #f5c800; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.3s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
+/* The sidebar links */
+.sidebar a {
+  /* white-space: nowrap; */
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #696969;
+}
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .05s; /* If you want a transition effect */
+  padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.HomeTitle {
+  font-family: lato, sans-serif;
+  margin-top: 130px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
+.HomeContent {
+  text-align: center;
+  margin-left: 0px;
+  color: White;
+}
+
+.Content1 {
+  font-family: lato, sans-serif;
+  margin-top: 80px;
+  margin-left: 13%;
+  height: 175px;
+  width: 175px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+  border-radius: 15px;
+  background-color: #f5c800;
+  position: absolute;
+  
+}
+.Content2 {
+  font-family: lato, sans-serif;
+  margin-top: 80px;
+  margin-left: 43%;
+  height: 175px;
+  width: 175px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+  border-radius: 15px;
+  background-color: #f5c800;
+  position: absolute;
+  
+}
+.Content3 {
+  font-family: lato, sans-serif;
+  margin-top: 80px;
+  margin-left: 73%;
+  height: 175px;
+  width: 175px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+  border-radius: 15px;
+  background-color: #f5c800;
+  position: absolute;
+  
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-github {
+  background: #6a6a6a;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.ContactHead {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
+.ContactBody {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
 .SuggestionsHead {
-    font-family: lato, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: large;
-  }
-  .SuggestionsBody {
-    font-family: lato, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: large;
-  }
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
+.SuggestionsBody {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
+/* #f8f385 is a cool looking yellow kinda bright tho */

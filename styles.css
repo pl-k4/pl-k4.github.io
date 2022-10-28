@@ -6,18 +6,7 @@ body{
   margin-left: 130px;
   color: White;
 }
-.MainText {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
-}
-.BodyText {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
-}
+
 img {
   height: 128px;
   width: 128px;
@@ -116,6 +105,13 @@ img {
   .sidebar a {font-size: 18px;}
 }
 
+.MainText {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
+
 .HomeTitle {
   font-family: lato, sans-serif;
   margin-top: 130px;
@@ -126,50 +122,36 @@ img {
 .HomeContent {
   text-align: center;
   margin-left: 0px;
-  color: White;
 }
 
 .Content1 {
-  font-family: lato, sans-serif;
   margin-top: 80px;
   margin-left: 13%;
   height: 175px;
   width: 175px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
   border-radius: 15px;
   background-color: #f5c800;
   position: absolute;
   
 }
 .Content2 {
-  font-family: lato, sans-serif;
   margin-top: 80px;
   margin-left: 43%;
   height: 175px;
   width: 175px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
   border-radius: 15px;
   background-color: #f5c800;
   position: absolute;
   
 }
 .Content3 {
-  font-family: lato, sans-serif;
   margin-top: 80px;
   margin-left: 73%;
   height: 175px;
   width: 175px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
   border-radius: 15px;
   background-color: #f5c800;
   position: absolute;
-  
 }
 
 .fa {
@@ -187,25 +169,8 @@ img {
   background: #6a6a6a;
   color: white;
 }
-.ContactHead {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
-}
-.ContactBody {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
-}
-.SuggestionsHead {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
-}
-.SuggestionsBody {
+
+#bodytext {
   font-family: lato, sans-serif;
   font-weight: 700;
   font-style: normal;

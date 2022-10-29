@@ -23,7 +23,7 @@ img {
   left: 0;
   position: absolute;
   z-index: 1;
-  background-color: #f5c800;
+  background-color: #a200ed;
   overflow-x: hidden;
   padding-top: 35px;
   font-family: lato, sans-serif;
@@ -36,10 +36,10 @@ img {
   padding: 35px;
   text-decoration: none;
   font-size: 22px;
-  color: #000000;
+  color: white;
 }
 .HomeNav a:hover {
-  color: #696969;
+  color: #515151;
 }
 .sidebar {
   height: 100%; /* 100% Full-height */
@@ -48,7 +48,7 @@ img {
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #f5c800; /* Black*/
+  background-color: #a200ed; 
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.3s; /* 0.5 second transition effect to slide in the sidebar */
@@ -69,7 +69,7 @@ img {
 }
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #696969;
+  color: #515151;
 }
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
@@ -124,34 +124,23 @@ img {
   margin-left: 0px;
 }
 
-.Content1 {
+.Content {
   margin-top: 80px;
-  margin-left: 13%;
-  height: 175px;
-  width: 175px;
+  margin-left: 31.63%;
+  height: 350px;
+  width: 550px;
   border-radius: 15px;
-  background-color: #f5c800;
+  background-color: #a200ed;
   position: absolute;
-  
 }
-.Content2 {
-  margin-top: 80px;
-  margin-left: 43%;
-  height: 175px;
-  width: 175px;
-  border-radius: 15px;
-  background-color: #f5c800;
-  position: absolute;
-  
-}
-.Content3 {
-  margin-top: 80px;
-  margin-left: 73%;
-  height: 175px;
-  width: 175px;
-  border-radius: 15px;
-  background-color: #f5c800;
-  position: absolute;
+
+.Content h1 {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  /* font-size: large; */
+  text-decoration: none;
+  color: white;
 }
 
 .fa {
@@ -175,5 +164,7 @@ img {
   font-weight: 700;
   font-style: normal;
   font-size: large;
+  text-decoration: none;
+  color: white;
 }
 /* #f8f385 is a cool looking yellow kinda bright tho */

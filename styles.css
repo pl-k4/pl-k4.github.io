@@ -7,7 +7,7 @@ body{
   color: White;
 }
 
-img {
+.discordpfp {
   height: 128px;
   width: 128px;
   display: block;
@@ -166,5 +166,54 @@ img {
   font-size: large;
   text-decoration: none;
   color: white;
+}
+
+.FlareTitle {
+    font-family: lato, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    /* font-size: large; */
+    text-decoration: none;
+    color: white;
+    /* margin-top: 5%; */
+}
+.FlareSub {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  /* font-size: large; */
+  text-decoration: none;
+  color: white;
+  /* margin-top: 5%; */
+}
+.botpfp {
+  margin-top: 5%;
+  height: 128px;
+  width: 128px;
+  display: block;
+  /* padding: 0px 10px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.inviteButton {
+  font-family: lato, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: large;
+  text-decoration: none;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  background-color: darkorange;
+  height: 15%;
+  width: 25%;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.inviteButton:hover {
+  background-color: rgb(226, 125, 0);
+  transition: 1s;
 }
 /* #f8f385 is a cool looking yellow kinda bright tho */

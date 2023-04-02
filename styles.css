@@ -22,6 +22,27 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007dd1', endColorstr='#0094a8',GradientType=0 );
 }
 
+/* allign the topContainer to be across the top of the screen */
+.topContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: #1A1A1A;
+    color: #fff;
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    /* make the background fade from top to bottom and from #005bd1 to #1A1A1A */
+    background: #005bd1;
+    background: -moz-linear-gradient(top, #005bd1 0%, #1A1A1A 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005bd1), color-stop(60%,#1A1A1A));
+}
+
 /* center the container div to the screen */
 .container {
     position: absolute;

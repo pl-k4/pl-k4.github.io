@@ -1,219 +1,85 @@
-html {
-  background-color: #272726;
+/* make everything with the button class rounded with a blue gradient */
+.button {
+    border-radius: 5px;
+    background: #005bd1;
+    background: -moz-linear-gradient(top, #005bd1 0%, #0078a8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005bd1), color-stop(100%,#0078a8));
+    background: -webkit-linear-gradient(top, #005bd1 0%,#0078a8 100%);
+    background: -o-linear-gradient(top, #005bd1 0%,#0078a8 100%);
+    background: -ms-linear-gradient(top, #005bd1 0%,#0078a8 100%);
+    background: linear-gradient(to bottom, #005bd1 0%,#0078a8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005bd1', endColorstr='#0078a8',GradientType=0 );
 }
-body{
-  text-align: center;
-  margin-left: 130px;
-  color: White;
-}
-
-.discordpfp {
-  height: 128px;
-  width: 128px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  padding: 0px 10px;
-}
-.HomeNav {
-  height: 70px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 1;
-  background-color: #a200ed;
-  overflow-x: hidden;
-  padding-top: 35px;
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-  /* border-radius: 0px 0px 17px 17px; */
-}
-.HomeNav a {
-  padding: 35px;
-  text-decoration: none;
-  font-size: 22px;
-  color: white;
-}
-.HomeNav a:hover {
-  color: #515151;
-}
-.sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #a200ed; 
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.3s; /* 0.5 second transition effect to slide in the sidebar */
+/* on hover lighten the colors */
+.button:hover {
+    background: #007dd1;
+    background: -moz-linear-gradient(top, #007dd1 0%, #0094a8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#007dd1), color-stop(100%,#0094a8));
+    background: -webkit-linear-gradient(top, #007dd1 0%,#0094a8 100%);
+    background: -o-linear-gradient(top, #007dd1 0%,#0094a8 100%);
+    background: -ms-linear-gradient(top, #007dd1 0%,#0094a8 100%);
+    background: linear-gradient(to bottom, #007dd1 0%,#0094a8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007dd1', endColorstr='#0094a8',GradientType=0 );
 }
 
-/* The sidebar links */
-.sidebar a {
-  /* white-space: nowrap; */
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #000000;
-  display: block;
-  transition: 0.3s;
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #515151;
-}
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-/* The button used to open the sidebar */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  left: 0;
-  top: 0;
-  position: absolute;
-}
-.openbtn:hover {
-  background-color: #444;
-}
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .05s; /* If you want a transition effect */
-  padding: 20px;
-}
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-
-.MainText {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
-}
-
-.HomeTitle {
-  font-family: lato, sans-serif;
-  margin-top: 130px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
-}
-.HomeContent {
-  text-align: center;
-  margin-left: 0px;
-}
-
-.Content {
-  margin-top: 80px;
-  margin-left: 31.63%;
-  height: 350px;
-  width: 550px;
-  border-radius: 15px;
-  background-color: #a200ed;
-  position: absolute;
-}
-
-.Content h1 {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  /* font-size: large; */
-  text-decoration: none;
-  color: white;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-github {
-  background: #6a6a6a;
-  color: white;
-}
-
-#bodytext {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
-  text-decoration: none;
-  color: white;
-}
-
-.FlareTitle {
+/* center the container div to the screen */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10%;
+    margin-left: -10%;
+    color: #fff;
     font-family: lato, sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
-    /* font-size: large; */
+    text-align: center;
     text-decoration: none;
-    color: white;
-    /* margin-top: 5%; */
-}
-.FlareSub {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  /* font-size: large; */
-  text-decoration: none;
-  color: white;
-  /* margin-top: 5%; */
-}
-.botpfp {
-  margin-top: 5%;
-  height: 128px;
-  width: 128px;
-  display: block;
-  /* padding: 0px 10px; */
-  margin-left: auto;
-  margin-right: auto;
-}
-.inviteButton {
-  font-family: lato, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: large;
-  text-decoration: none;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  text-align: center;
-  background-color: darkorange;
-  height: 15%;
-  width: 25%;
-  display: inline-block;
-  border-radius: 10px;
+    padding-top: 10px;
+
 }
 
-.inviteButton:hover {
-  background-color: rgb(226, 125, 0);
-  transition: 1s;
+/* center the bottomContainer class to the bottom of the screen */
+.bottomContainer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10%;
+    color: #797979;
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
 }
-/* #f8f385 is a cool looking yellow kinda bright tho */
+.button {
+    display: inline-block;
+    width: 130px;
+    height: 60px;
+    font-size: 20px;
+    /* margin: 5px; */
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 0 5px #000; 
+    text-decoration: none;
+    color: #fff;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    width: 250px;
+    height: 150px;
+}
+
+body {
+    background: #1A1A1A;
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+
+    color: #333;
+}

@@ -1,14 +1,14 @@
 /* make everything with the button class rounded with a blue gradient */
 .button {
     border-radius: 5px;
-    background: #005bd1;
-    background: -moz-linear-gradient(top, #005bd1 0%, #0078a8 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005bd1), color-stop(100%,#0078a8));
-    background: -webkit-linear-gradient(top, #005bd1 0%,#0078a8 100%);
-    background: -o-linear-gradient(top, #005bd1 0%,#0078a8 100%);
-    background: -ms-linear-gradient(top, #005bd1 0%,#0078a8 100%);
-    background: linear-gradient(to bottom, #005bd1 0%,#0078a8 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005bd1', endColorstr='#0078a8',GradientType=0 );
+    background: rgb(180, 190, 254);
+    background: -moz-linear-gradient(top, rgb(180, 190, 254) 0%, rgb(137, 180, 250) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(180, 190, 254)), color-stop(100%,rgb(137, 180, 250)));
+    background: -webkit-linear-gradient(top, rgb(180, 190, 254) 0%,rgb(137, 180, 250) 100%);
+    background: -o-linear-gradient(top, rgb(180, 190, 254) 0%,rgb(137, 180, 250) 100%);
+    background: -ms-linear-gradient(top, rgb(180, 190, 254) 0%,rgb(137, 180, 250) 100%);
+    background: linear-gradient(to bottom, rgb(180, 190, 254) 0%,rgb(137, 180, 250) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(180, 190, 254)', endColorstr='rgb(180, 190, 254)',GradientType=0 );
     z-index: 99999;
 }
 /* on hover lighten the colors */
@@ -32,7 +32,7 @@
     width: 100%;
     height: 10%;
     background: #1A1A1A;
-    color: #fff;
+    color: rgb(205, 214, 244);
     font-family: lato, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -54,7 +54,7 @@
     left: 50%;
     margin-top: -10%;
     margin-left: -50%;
-    color: #fff;
+    color: rgb(205, 214, 244);
     font-family: lato, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -73,7 +73,7 @@
     left: 50%;
     width: 100%;
     margin-left: -50%;
-    color: #797979;
+    color: rgb(186, 194, 222);
     font-family: lato, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -91,11 +91,11 @@
     line-height: 60px;
     box-shadow: 0 0 5px #000; 
     text-decoration: none;
-    color: #fff;
+    color: rgb(108, 112, 134);
     z-index: 99999;
 }
 a {
-    color: #fff;
+    color: rgb(205, 214, 244);
     text-decoration: none;
     width: 250px;
     height: 150px;
@@ -103,110 +103,30 @@ a {
     z-index: 99999;
 }
 
-.projectDesc {
-    font-family: lato, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin-top: 20px;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
-    color: #fff;
-}
-/* move the div with the class svgs to the horizontal left and vertical center of the screen */
 .svgLeft {
     content: "";
     width: 565px;
     height: 557px;
     background: url("images/header_left.svg") no-repeat center center/contain;
-    position: fixed;
-    left: -383px;
-    top: 40px;
-    /* make this show on bottom */
+    position: absolute;
+    left: -250px;
+    top: 150px;
+    
     z-index: 1;
 }
-/* move the div with the class svgs to the horizontal right and vertical center of the screen */
 .svgRight {
     content: "";
     width: 565px;
     height: 557px;
     background: url("images/header_right.svg") no-repeat center center/contain;
-    right: -323px;
+    right: -250px;
     top: 150px;
-    /* make this show on bottom */
     z-index: 1;
     position: fixed;
 }
 
-.projectContainer {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    /* height: 80%; */
-    z-index: 1;
-    left: 50%;
-    margin-top: -10%;
-    margin-left: -50%;
-    color: #fff;
-    font-family: lato, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
-    z-index: 99999;
-    /* background-color: #fff; */
-}
-
-.projectContainer div {
-    display: inline-block;
-    width: 340px;
-    height: 400px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 60px;
-    box-shadow: 0 0 5px #000; 
-    text-decoration: none;
-    color: #fff;
-    margin: 10px 30px;
-    z-index: 99999;
-}
-
-.webproject {
-    padding-left: 10px;
-    padding-right: 10px;
-    z-index: 99999;
-}
-.mcproject {
-    padding-left: 10px;
-    padding-right: 10px;
-    z-index: 99999;
-}
-
-.projectContainer p {
-    width: 340px;
-    position: absolute;
-    font-size: 20px;
-    text-align: center;
-    line-height: 30px;
-    z-index: 99999;
-    text-decoration: none;
-    color: #fff;
-}
-
-.projectHeader {
-    font-family: lato, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin-top: 60px;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
-    color: #fff;
-}
-
 body {
-    background: #1A1A1A;
+    background: rgb(30, 30, 46);
     font-family: lato, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -214,5 +134,5 @@ body {
     text-decoration: none;
     padding-top: 10px;
 
-    color: #333;
+    color: rgb(205, 214, 244);
 }

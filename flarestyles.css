@@ -73,3 +73,47 @@ body {
 .orange-button:hover {
     background-color: #ff8000;
 }
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    text-align: center;
+    background-color: #272727;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px; /* Set the width to 200px */
+    height: 200px; /* Set the height to 200px */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    max-width: 50px;
+    height: auto;
+    vertical-align: middle;
+    fill: #ff8000; /* Change the fill color to #ff8000 */
+    color: #ff8000;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+}

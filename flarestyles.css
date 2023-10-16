@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Text color */
+    font-family: Lato, sans-serif; /* Set font-family to Lato */
+    font-weight: 550; /* Set font weight to 550 */
+    font-style: normal; /* Set font style to normal */
+}
+
+.top-navbar {
+    background-color: #1a1a1a; /* Navbar background color */
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    padding: 10px;
+}
+
+.top-navbar img {
+    max-width: 60px; /* Adjust the image width to 65px */
+    height: auto;
+}
+
+.top-navbar a {
+    text-decoration: none;
+    color: #ffffff; /* Link text color */
+    margin: 0 10px; /* Adjust the spacing between links */
+    font-size: 18px; /* Increase the font size */
+    font-family: Lato, sans-serif; /* Apply the same font to the links */
+    font-weight: 550; /* Set font weight to 550 */
+    font-style: normal; /* Apply the same font style to the links */
+    transition: color 0.3s; /* Add a smooth color transition effect */
+}
+
+.top-navbar a:hover {
+    color: #ff9900; /* Change text color to #ff9900 (new orange) on hover */
+}
+
+.content {
+    padding: 60px;
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px; /* Increase the font size */
+    margin-bottom: 20px;
+}
+
+.sub-header {
+    text-align: center;
+    font-size: 24px; /* Increase the font size */
+    margin-bottom: 20px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.orange-button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 18px; /* Increase the font size */
+}
+
+.orange-button:hover {
+    background-color: #ff8000;
+}

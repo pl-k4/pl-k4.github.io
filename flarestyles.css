@@ -1,39 +1,40 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background color */
-    color: #ffffff; /* Text color */
-    font-family: Lato, sans-serif; /* Set font-family to Lato */
-    font-weight: 550; /* Set font weight to 550 */
-    font-style: normal; /* Set font style to normal */
+    background-color: #121212; 
+    color: #ffffff; 
+    font-family: Lato, sans-serif; 
+    font-weight: 550; 
+    font-style: normal; 
+    background-image: url('images/pattern.png');
 }
 
 .top-navbar {
-    background-color: #1a1a1a; /* Navbar background color */
+    background-color: #1a1a1a;
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start; 
     align-items: center;
     padding: 10px;
 }
 
 .top-navbar img {
-    max-width: 60px; /* Adjust the image width to 65px */
+    max-width: 60px; 
     height: auto;
 }
 
 .top-navbar a {
     text-decoration: none;
-    color: #ffffff; /* Link text color */
-    margin: 0 10px; /* Adjust the spacing between links */
-    font-size: 18px; /* Increase the font size */
-    font-family: Lato, sans-serif; /* Apply the same font to the links */
-    font-weight: 550; /* Set font weight to 550 */
-    font-style: normal; /* Apply the same font style to the links */
-    transition: color 0.3s; /* Add a smooth color transition effect */
+    color: #ffffff; 
+    margin: 0 10px; 
+    font-size: 18px; 
+    font-family: Lato, sans-serif; 
+    font-weight: 550; 
+    font-style: normal; 
+    transition: color 0.3s; 
 }
 
 .top-navbar a:hover {
-    color: #ff9900; /* Change text color to #ff9900 (new orange) on hover */
+    color: #ff9900; 
 }
 
 .content {
@@ -43,13 +44,13 @@ body {
 .header {
     text-align: center;
     font-weight: bold;
-    font-size: 40px; /* Increase the font size */
+    font-size: 40px; 
     margin-bottom: 20px;
 }
 
 .sub-header {
     text-align: center;
-    font-size: 24px; /* Increase the font size */
+    font-size: 24px; 
     margin-bottom: 20px;
 }
 
@@ -67,7 +68,7 @@ body {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
-    font-size: 18px; /* Increase the font size */
+    font-size: 18px; 
 }
 
 .orange-button:hover {
@@ -87,8 +88,8 @@ body {
     background-color: #272727;
     padding: 20px;
     border-radius: 10px;
-    width: 200px; /* Set the width to 200px */
-    height: 200px; /* Set the height to 200px */
+    width: 200px; 
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -98,15 +99,7 @@ body {
     max-width: 50px;
     height: auto;
     vertical-align: middle;
-    fill: #ff8000; /* Change the fill color to #ff8000 */
-    color: #ff8000;
-}
-
-.card-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    fill: #ff8000;
 }
 
 .card h2 {

@@ -15,6 +15,7 @@ body {
     justify-content: flex-start; 
     align-items: center;
     padding: 10px;
+    box-shadow: #272727 0px 0px 10px;
 }
 
 .top-navbar img {
@@ -61,6 +62,7 @@ body {
 .orange-button {
     display: inline-block;
     background-color: #ff9900;
+    box-shadow: #ff9e0d 0px 0px 10px;
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
@@ -68,11 +70,13 @@ body {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
+    transition: box-shadow 0.3s;
     font-size: 18px; 
 }
 
 .orange-button:hover {
     background-color: #ff8000;
+    box-shadow: #ff9e0d 0px 0px 15px;
 }
 
 .cards {
@@ -93,6 +97,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: #272727 0px 0px 10px;
 }
 
 .card img {

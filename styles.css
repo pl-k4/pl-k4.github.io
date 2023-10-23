@@ -1,138 +1,55 @@
-/* make everything with the button class rounded with a blue gradient */
-.button {
-    border-radius: 5px;
-    background: rgb(180, 190, 254);
-    background: -moz-linear-gradient(top, rgb(180, 190, 254) 0%, rgb(137, 180, 250) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(180, 190, 254)), color-stop(100%,rgb(137, 180, 250)));
-    background: -webkit-linear-gradient(top, rgb(180, 190, 254) 0%,rgb(137, 180, 250) 100%);
-    background: -o-linear-gradient(top, rgb(180, 190, 254) 0%,rgb(137, 180, 250) 100%);
-    background: -ms-linear-gradient(top, rgb(180, 190, 254) 0%,rgb(137, 180, 250) 100%);
-    background: linear-gradient(to bottom, rgb(180, 190, 254) 0%,rgb(137, 180, 250) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(180, 190, 254)', endColorstr='rgb(180, 190, 254)',GradientType=0 );
-    z-index: 99999;
-}
-/* on hover lighten the colors */
-.button:hover {
-    background: #007dd1;
-    background: -moz-linear-gradient(top, #007dd1 0%, #0094a8 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#007dd1), color-stop(100%,#0094a8));
-    background: -webkit-linear-gradient(top, #007dd1 0%,#0094a8 100%);
-    background: -o-linear-gradient(top, #007dd1 0%,#0094a8 100%);
-    background: -ms-linear-gradient(top, #007dd1 0%,#0094a8 100%);
-    background: linear-gradient(to bottom, #007dd1 0%,#0094a8 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007dd1', endColorstr='#0094a8',GradientType=0 );
-    z-index: 99999;
-}
-
-/* allign the topContainer to be across the top of the screen */
-.topContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    background: #1A1A1A;
-    color: rgb(205, 214, 244);
-    font-family: lato, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
-    /* make the background fade from top to bottom and from #005bd1 to #1A1A1A */
-    background: #005bd1;
-    background: -moz-linear-gradient(top, #005bd1 0%, #1A1A1A 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005bd1), color-stop(60%,#1A1A1A));
-}
-
-/* center the container div to the screen */
-.container {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 80%;
-    left: 50%;
-    margin-top: -10%;
-    margin-left: -50%;
-    color: rgb(205, 214, 244);
-    font-family: lato, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
-    /* background-color: #fff; */
-    /* make this show on top  */
-    z-index: 1;
-}
-
-/* center the bottomContainer class to the bottom of the screen */
-.bottomContainer {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 100%;
-    margin-left: -50%;
-    color: rgb(186, 194, 222);
-    font-family: lato, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
-    z-index: 99999;
-}
-.button {
-    display: inline-block;
-    width: 130px;
-    height: 60px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 60px;
-    box-shadow: 0 0 5px #000; 
-    text-decoration: none;
-    color: rgb(108, 112, 134);
-    z-index: 99999;
-}
-a {
-    color: rgb(205, 214, 244);
-    text-decoration: none;
-    width: 250px;
-    height: 150px;
-    font-size: 20px;
-    z-index: 99999;
-}
-
-.svgLeft {
-    content: "";
-    width: 565px;
-    height: 557px;
-    background: url("images/header_left.svg") no-repeat center center/contain;
-    position: absolute;
-    left: -250px;
-    top: 150px;
-    
-    z-index: 1;
-}
-.svgRight {
-    content: "";
-    width: 565px;
-    height: 557px;
-    background: url("images/header_right.svg") no-repeat center center/contain;
-    right: -250px;
-    top: 150px;
-    z-index: 1;
-    position: fixed;
-}
-
 body {
-    background: rgb(30, 30, 46);
-    font-family: lato, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: #ffffff; 
+    font-family: Lato, sans-serif; 
+    font-weight: 550; 
+    font-style: normal; 
+    background-image: url('images/pattern.png');
+}
 
-    color: rgb(205, 214, 244);
+.top-navbar {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 10px;
+}
+
+.top-navbar img {
+    max-width: 60px; 
+    height: auto;
+    border-radius: 50%;
+}
+
+.top-navbar a {
+    text-decoration: none;
+    color: #ffffff; 
+    margin: 0 10px; 
+    font-size: 18px; 
+    font-family: Lato, sans-serif; 
+    font-weight: 550; 
+    font-style: normal; 
+    transition: color 0.3s; 
+}
+
+.top-navbar a:hover {
+    color: #f6f483; 
+}
+
+.header-section {
+    text-align: left; /* Right-align the text */
+    padding: 200px 50px 50px 800px; /* Add more right padding to move text farther from the right side */
+}
+
+.header-section h1 {
+    font-size: 48px; /* Increase the font size for the name */
+    margin: 0;
+}
+
+.header-section .sub-header {
+    /* make it not bold */
+    font-weight: normal;
+    font-size: 12px; /* Increase the font size for the subheader */
 }

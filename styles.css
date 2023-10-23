@@ -6,7 +6,7 @@ body {
     font-family: Lato, sans-serif; 
     font-weight: 550; 
     font-style: normal; 
-    background-image: url('images/pattern.png');
+    background-image: url('images/pattern2.png');
 }
 
 .top-navbar {
@@ -40,10 +40,11 @@ body {
 
 .header-section {
     text-align: left; /* Right-align the text */
-    padding: 200px 50px 50px 800px; /* Add more right padding to move text farther from the right side */
+    padding: 13% 5% 5% 68% /* Add more right padding to move text farther from the right side */
 }
 
 .header-section h1 {
+    max-width: 500px; /* Set the max-width of the name to prevent it from taking up the entire screen */
     font-size: 48px; /* Increase the font size for the name */
     margin: 0;
 }

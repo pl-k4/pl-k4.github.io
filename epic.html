@@ -26,7 +26,7 @@
 
         h1 {
             font-size: 36px;
-            color: #ffffff; 
+            color: cyan; 
             margin: 0;
         }
 
@@ -36,7 +36,7 @@
 
         nav a {
             text-decoration: none;
-            color: #ffffff; 
+            color: #00ccff; 
             margin: 0 15px;
             font-size: 18px;
         }
@@ -99,7 +99,7 @@
 <body>
 
     <header>
-        <h1>Nerbles | plk4</h1>
+        <h1 id="changingText">Nerbles | plk4</h1>
     </header>
 
     <nav>
@@ -107,7 +107,19 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
+    <script>
+        const changingText = document.getElementById('changingText');
+        let isRed = false;
 
+        setInterval(() => {
+        if (isRed) {
+            changingText.style.color = 'cyan';
+        } else {
+            changingText.style.color = 'red';
+        }
+        isRed = !isRed;
+        }, 300);
+    </script>
     <section id="about">
         <h2 class="marquee">About Me</h2>
         <div>Welcome to my epic website. graphic design is my passion and i am very good at it as you can see</div>

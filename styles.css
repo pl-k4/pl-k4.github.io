@@ -19,7 +19,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
-    width: 100%; /* Ensure navbar takes full width */
+    width: 100%; 
 }
 
 
@@ -86,22 +86,21 @@ body {
 }
 
 .header {
-    text-align: left; /* Right-align the text */
-    padding: 13% 5% 5% 62%; /* Add more right padding to move text farther from the right side */
+    text-align: left; 
+    padding: 13% 5% 5% 62%; 
     margin: 20px;
     position: relative;
 }
 
 .header h1 {
-    max-width: 500px; /* Set the max-width of the name to prevent it from taking up the entire screen */
-    font-size: 48px; /* Increase the font size for the name */
+    max-width: 500px; 
+    font-size: 48px; 
     margin: 0;
 }
 
 .header .sub-header {
-    /* make it not bold */
     font-weight: normal;
-    font-size: 12px; /* Increase the font size for the subheader */
+    font-size: 12px; 
 }
 
 .section-title {

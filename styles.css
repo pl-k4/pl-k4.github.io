@@ -1,20 +1,67 @@
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin: 0;
     padding: 0;
-    background-color: #121212; 
-    color: #ffffff; 
-    font-family: Lato, sans-serif; 
-    font-weight: 550; 
-    font-style: normal; 
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-weight: 550;
+    font-style: normal;
     background-image: url('images/pattern2.png');
+    overflow-x: hidden;
 }
 
 .top-navbar {
     background-color: #1a1a1a;
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     align-items: center;
     padding: 10px;
+    width: 100%; /* Ensure navbar takes full width */
+}
+
+
+.content-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 50px;
+    padding-top: 80px;
+    z-index: 1;
+    
+}
+
+.card {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+}
+
+.card img {
+    max-width: 100%;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin-top: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card p {
+    font-size: 14px;
 }
 
 .top-navbar img {
@@ -38,19 +85,39 @@ body {
     color: #f6f483; 
 }
 
-.header-section {
+.header {
     text-align: left; /* Right-align the text */
-    padding: 13% 5% 5% 68% /* Add more right padding to move text farther from the right side */
+    padding: 13% 5% 5% 62%; /* Add more right padding to move text farther from the right side */
+    margin: 20px;
+    position: relative;
 }
 
-.header-section h1 {
+.header h1 {
     max-width: 500px; /* Set the max-width of the name to prevent it from taking up the entire screen */
     font-size: 48px; /* Increase the font size for the name */
     margin: 0;
 }
 
-.header-section .sub-header {
+.header .sub-header {
     /* make it not bold */
     font-weight: normal;
     font-size: 12px; /* Increase the font size for the subheader */
+}
+
+.section-title {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    padding-left: 220px;
+    padding-top: 50px;
+    z-index: 1;
+    
+}
+
+.section-title h2 {
+    font-size: 24px;
+    color: #f6f483;
 }

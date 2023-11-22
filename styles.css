@@ -121,3 +121,8 @@ body {
     font-size: 24px;
     color: #f6f483;
 }
+
+.header, .card, .section-title {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}

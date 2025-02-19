@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Plk4's Website!</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=1080, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta content="Plk4's Website!" property="og:title" />
-        <meta content="hello!" property="og:description"/>
-        <meta content="https://pl-k4.github.io/" property="og:url" />
-        <meta content="https://media.discordapp.net/attachments/940441842405748778/1266578431630512292/ezgif-5-2f3cfca498.gif?ex=66db0d55&is=66d9bbd5&hm=6fc209f31910ad4f9666f3eaf5c26f29aaf10878cff553b062c206cfbfd4fc0d&=" property="og:image" />
+        <title>pika</title>
+        <meta content="pika" property="og:title" />
+        <meta content="@plk4 on discord" property="og:description"/>
         <meta content="#FFBF00" data-react-helmet="true" name="theme-color" />
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://use.typekit.net/sei7qba.css">
-        <script src="scripts.js"></script>
-        <link rel="icon" href="https://github.com/Nerbles1/Nerbles1.github.io/blob/main/images/discordpfp3.png?raw=true" type="image/x-icon" />
-        <style>
-            @font-face {
-                font-family: 'Rubik';
-                src: url('fonts/Rubik/static/Rubik-Regular.ttf') format('truetype');
-            }
-            @font-face {
-                font-family: 'Rubik';
-                src: url('fonts/Rubik/static/Rubik-Bold.ttf') format('truetype');
-                font-weight: bold;
-            }
-            @font-face {
-                font-family: 'Rubik';
-                src: url('fonts/Rubik/static/Rubik-Italic.ttf') format('truetype');
-                font-style: italic;
-            }
-            @font-face {
-                font-family: 'Rubik';
-                src: url('fonts/Rubik/static/Rubik-BoldItalic.ttf') format('truetype');
-                font-weight: bold;
-                font-style: italic;
-            }
-            @font-face {
-                font-family: 'Rubik';
-                src: url('fonts/Rubik/static/Rubik-SemiBold.ttf') format('truetype');
-                font-weight: 600;
-            }
-            @font-face {
-                font-family: 'Titan_One';
-                src: url('fonts/Titan_One/TitanOne-Regular.ttf') format('truetype');
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
     </head>
     <body>
-        <nav class="top-navbar">
-            <a href="https://nerbles1.github.io">
-                <img src="images/discordpfp3.png" alt="My PFP">
-            </a>
-            <a href="https://github.com/pl-k4">My Github</a>
-            <!-- <a href="portfolio.html">Portfolio</a> -->
-            <a href="https://e-z.bio/pikachu">About Me</a>
-            <a href="https://dsc.gg/plk4">Discord</a>
-        </nav>
+      <div class="clock-box">
+        <div id="clockbox"></div>
 
-        <div class="header">
-            <h1><span style="color: #f8c25e" class="headertext">Hello, I'm plk4!</span> I am a software developer from the United States</h1>
-            <p class="sub-header">I primarily code in JavaScript but know Java, HTML/CSS and am learning C! if you would like to contact me join my discord.</p>
-        </div>
-
-        <div class="section-title">
-            <iframe src="https://discord.com/widget?id=1244664528004710405&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
+        <script type="text/javascript">
+        function GetClock(){
+        var d=new Date();
+        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+        if(nmin<=9) nmin="0"+nmin;
+        if(nsec<=9) nsec="0"+nsec;
         
-        <!-- <div class="content-container">
-            <div class="card">
-                
-            </div>
-        </div> -->
-    
+        var clocktext=""+nhour+":"+nmin+":"+nsec+"";
+        document.getElementById('clockbox').innerHTML=clocktext;
+        }
+        
+        GetClock();
+        setInterval(GetClock,1000);
+        </script>
+        
+
+        <div id="datebox"></div>
+
+<script type="text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+document.getElementById('datebox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+      </div>
+     
+      <img src="wallpaper/pikachu2.gif" alt="image of glitch">
+
+
+        <nav>
+          
+            <ul>
+              <li><a href="https://www.youtube.com/@%CE%A1%CE%99%CE%9A%CE%9B">youtube</a></li>
+              <li><a href="https://discord.gg/3DDWNnweaX">discord</a></li>
+              <li><a href="https://bsky.app/profile/raichu.tech">bluesky</a></li>
+              <li><a href="https://x.com/implk4">twitter</a></li>
+            </ul>
+        
+            <ul>
+              <li><a href="https://www.youtube.com/@RaichuClips">yt alt</a></li>
+              <li><a href="https://namemc.com/profile/plk4.1">namemc</a></li>
+              <li><a href="https://github.com/pl-k4">github</a></li>
+              <li><a href="https://www.twitch.tv/implk4">twitch</a></li>
+            </ul>
+        
+            <ul>
+              <li><a href="https://solo.to/plk4">solo.to</a></li>
+              <li><a href="https://namemc.com/profile/7rat.5">namemc alt</a></li>
+              <li><a href="https://mine.ly/mc.raichu.tech">mc server</a></li>
+              <li><a href="mailto:admin@raichu.tech">email</a></li>
+            </ul>
+
+            
+
+          </nav>
     </body>
 </html>

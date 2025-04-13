@@ -45,14 +45,25 @@ document.getElementById('datebox').innerHTML=clocktext;
 
 GetClock();
 setInterval(GetClock,1000);
+
+
 </script>
-
-
-
+      <!-- i hate this so much but im just gonna leave it like this since it works -->
       </div>
      
-      <img src="wallpaper/sunset.jpg" alt="image of glitch">
+      <img id="wallpaper" src="wallpaper/cubone.jpg" alt="wallpaper image">
+      <script>
+        var images = ["wallpaper/cubone.jpg", "wallpaper/sunset.jpg", "wallpaper/pikacelibi.jpg"]
 
+        function GetImage() {
+          const index = Math.floor(Math.random() * images.length);
+          return images[index];
+        }
+
+        var wallpaper = GetImage()
+
+        document.getElementById('wallpaper').src = wallpaper
+      </script>
 
         <nav>
           

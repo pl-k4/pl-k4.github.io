@@ -1,91 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <title>pika</title>
         <meta content="pika" property="og:title" />
-        <meta content="@plk4 on discord" property="og:description"/>
+        <meta content="@plk4 on discord" property="og:description" />
         <meta content="#FFBF00" data-react-helmet="true" name="theme-color" />
-        <meta content="https://cdn.discordapp.com/attachments/940441842405748778/1266578431630512292/ezgif-5-2f3cfca498.gif?ex=67b5e655&is=67b494d5&hm=cfd5afeac8e3460a1cef7b87bb5f00154b1bf1a87263774c0072a35d8b9cae16&" property="og:image" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+        <meta
+            content="https://cdn.discordapp.com/attachments/940441842405748778/1266578431630512292/ezgif-5-2f3cfca498.gif?ex=67b5e655&is=67b494d5&hm=cfd5afeac8e3460a1cef7b87bb5f00154b1bf1a87263774c0072a35d8b9cae16&"
+            property="og:image"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="favicon-16x16.png" />
     </head>
     <body>
-      <div class="clock-box">
-        <div id="clockbox"></div>
+        <div class="clock-box">
+            <div id="clockbox"></div>
 
-        <script type="text/javascript">
-        function GetClock(){
-        var d=new Date();
-        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
-        if(nmin<=9) nmin="0"+nmin;
-        if(nsec<=9) nsec="0"+nsec;
-        
-        var clocktext=""+nhour+":"+nmin+":"+nsec+"";
-        document.getElementById('clockbox').innerHTML=clocktext;
-        }
-        
-        GetClock();
-        setInterval(GetClock,1000);
+            <script type="text/javascript">
+                function GetClock() {
+                    var d = new Date();
+                    var nhour = d.getHours(),
+                        nmin = d.getMinutes(),
+                        nsec = d.getSeconds();
+                    if (nmin <= 9) nmin = "0" + nmin;
+                    if (nsec <= 9) nsec = "0" + nsec;
+
+                    var clocktext = "" + nhour + ":" + nmin + ":" + nsec + "";
+                    document.getElementById("clockbox").innerHTML = clocktext;
+                }
+
+                GetClock();
+                setInterval(GetClock, 1000);
+            </script>
+
+            <div id="datebox"></div>
+
+            <script type="text/javascript">
+                var tday = [
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                ];
+                var tmonth = [
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July",
+                    "August",
+                    "September",
+                    "October",
+                    "November",
+                    "December",
+                ];
+
+                function GetClock() {
+                    var d = new Date();
+                    var nday = d.getDay(),
+                        nmonth = d.getMonth(),
+                        ndate = d.getDate(),
+                        nyear = d.getFullYear();
+
+                    var clocktext =
+                        "" +
+                        tday[nday] +
+                        ", " +
+                        tmonth[nmonth] +
+                        " " +
+                        ndate +
+                        ", " +
+                        nyear +
+                        "";
+                    document.getElementById("datebox").innerHTML = clocktext;
+                }
+
+                GetClock();
+                setInterval(GetClock, 1000);
+            </script>
+        </div>
+
+        <img id="wallpaper" src="wallpaper/cubone.jpg" alt="wallpaper image" />
+        <script>
+            // this is so bad lmao but it works i should've moved the above script tag down
+            var images = [
+                "wallpaper/cubone.jpg",
+                "wallpaper/sunset.jpg",
+                "wallpaper/pikacelibi.jpg",
+                "wallpaper/mewtwo.jpg",
+                "wallpaper/caterpie.jpg",
+                "wallpaper/charizard.jpg",
+            ];
+
+            function GetImage() {
+                const index = Math.floor(Math.random() * images.length);
+                return images[index];
+            }
+
+            var wallpaper = GetImage();
+
+            document.getElementById("wallpaper").src = wallpaper;
         </script>
-        
-
-        <div id="datebox"></div>
-
-<script type="text/javascript">
-var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-function GetClock(){
-var d=new Date();
-var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-
-var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"";
-document.getElementById('datebox').innerHTML=clocktext;
-}
-
-GetClock();
-setInterval(GetClock,1000);
-
-
-</script>
-      </div>
-     
-      <img id="wallpaper" src="wallpaper/cubone.jpg" alt="wallpaper image">
-      <script>
-        // this is so bad lmao but it works i should've moved the above script tag down
-        var images = ["wallpaper/cubone.jpg", "wallpaper/sunset.jpg", "wallpaper/pikacelibi.jpg", "wallpaper/mewtwo.jpg", "wallpaper/caterpie.jpg", "wallpaper/charizard.jpg"]
-
-        function GetImage() {
-          const index = Math.floor(Math.random() * images.length);
-          return images[index];
-        }
-
-        var wallpaper = GetImage()
-
-        document.getElementById('wallpaper').src = wallpaper
-      </script>
 
         <nav>
-          
             <ul>
-              <li><a href="https://www.youtube.com/@%CE%A1%CE%99%CE%9A%CE%9B">youtube</a></li>
-              <li><a href="https://discord.com/users/477572353602224160">discord</a></li>
-              <li><a href="https://x.com/implk4">twitter</a></li>
-            </ul>
-        
-            <ul>
-              <li><a href="https://namemc.com/profile/plk4.1">namemc</a></li>
-              <li><a href="https://github.com/pl-k4">github</a></li>
-              <li><a href="https://www.twitch.tv/implk4">twitch</a></li>
+                <li>
+                    <a href="https://www.youtube.com/@%CE%A1%CE%99%CE%9A%CE%9B"
+                        >youtube</a
+                    >
+                </li>
+                <li>
+                    <a href="https://namemc.com/profile/RambleyRaccoon.2"
+                        >namemc alt</a
+                    >
+                </li>
+                <li>
+                    <a href="https://discord.gg/7FvxabNCRj">discord server</a>
+                </li>
             </ul>
 
             <ul>
-                <li><a href="https://namemc.com/profile/RambleyRaccoon.2">namemc alt</a></li>
-                <li><a href="https://bsky.app/profile/raichu.tech">bluesky</a></li>
+                <li><a href="https://x.com/implk4">twitter</a></li>
+                <li><a href="https://namemc.com/profile/plk4.1">namemc</a></li>
+                <li><a href="https://github.com/pl-k4">github</a></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="https://discord.com/users/477572353602224160"
+                        >discord</a
+                    >
+                </li>
+                <li>
+                    <a href="https://bsky.app/profile/raichu.tech">bluesky</a>
+                </li>
                 <li><a href="https://solo.to/plk4">solo.to</a></li>
             </ul>
-            
 
-          </nav>
+            <ul>
+                <li>
+                    <a href="https://x.com/implk4">none</a>
+                </li>
+                <li>
+                    <a href="https://x.com/implk4">none</a>
+                </li>
+                <li>
+                    <a href="https://x.com/implk4">none</a>
+                </li>
+            </ul>
+        </nav>
     </body>
 </html>
